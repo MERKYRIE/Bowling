@@ -1,0 +1,11 @@
+#version 460 core
+
+layout(location = 2) in vec2 ITexture;
+
+out vec4 OColor;
+
+layout(location = 6) uniform sampler2D UTexture;
+
+void main(){
+	   OColor = texture(UTexture , ITexture);
+}
